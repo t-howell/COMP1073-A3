@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	 <!-- CSS Section -->
+	<link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="Scripts/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="Scripts/lib/font-awesome/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="Contents/app.css"> 
+</head>
+<body>
+	<header>
+		<!-- Bootstrap Nav Bar -->
+		<nav class="navbar navbar-default">
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     			<ul class="nav navbar-nav">
+					<li><a class="navbar-brand" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+      	  			<li><a href="projects.html"><i class="fa fa-terminal" aria-hidden="true"></i> Projects</a></li>
+        			<li class="active"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+				</ul>
+    		</div>
+		</nav>
+	</header>
+	<!-- Contact Form -->
+	<div id="form">
+		<h1 id="contactHeading"></h1>
+		<form>
+			<h4 id="name"></h3>
+			<input id="userName" type="text" name="name"></br>
+			<h4 id="email"></h3>
+			<input id="userEmail" type="text" name="email"></br>
+			<h4 id="message"></h3>
+			<textarea id="userMessage" name="message" rows="5" cols="50" >Please leave a short message... 
+			</textarea></br>
+			<input id="submit" type="submit" >
+		</form>
+	</div>
+	<!-- JavaScript Section -->
+	<script src="Scripts/lib/jquery/dist/jquery.min.js"></script>
+	<script src="Scripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="Scripts/app.js"></script>
+</body>
+</html>
