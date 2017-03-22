@@ -11,14 +11,14 @@
 (function () { // Beginning of the IIFE
 //console.log("App Started...");
   console.info(`Page Title: ${document.title}`); // string interpolation
+
 //Begin switch case
+//----------------------------------------------Home
   switch (document.title) {
     case "Home":
 
 let data = {};
 
-//	let aboutHTML;
-//----------------------------------------------A3 TEST
 //Connect to get the things
 let XMLConnect = new XMLHttpRequest();
 
@@ -38,8 +38,8 @@ XMLConnect.send(null);
 	};
 //Check that everything is loaded
 XMLConnect.addEventListener("load", function () {
-	 
-//reference an element
+
+//reference an html element
 let aboutMe = document.getElementById("aboutMe");
 //create variable that contains content
 let aboutContent = data.myContent[0].paragraph;
@@ -57,14 +57,8 @@ aboutHeading.innerHTML = headerContent;
 		 }
 )
 
-
-//----------------------------------------------A3 TEST end
-
-
-
-
     break;
-
+//-----------------------------------------------------------Projects
     case "Projects":
 let projectData = {};
 //Connect to get the things
@@ -145,7 +139,7 @@ thirdInfo.textContent = thirdInfoContent;
 }
 )
 	break;
-
+//-----------------------------------------------------------Contact
 	case "Contact":
 
 let contactData = {};
@@ -202,7 +196,7 @@ let messageContent = contactData.myContent[2].paragraph;
 
 contactMessage.textContent = messageContent;
 
-//Submit user inputs
+//Submit user inputs (From Assignment 2)
 
 let userName = document.getElementById("userName");
 let userEmail = document.getElementById("userEmail");
@@ -212,7 +206,6 @@ let submitButton = document.getElementById("submit");
 submitButton.addEventListener("click", function(event) {
 	event.preventDefault();
 
-//Had trouble printing these, git .value idea from stack overflow
 	console.log(userName.value);
 	console.log(userEmail.value);
 	console.log(userMessage.value);
@@ -227,25 +220,4 @@ break;
 
 })(); // end of the IIFE
 
-
-
-
-
-
-//----------------------------------------------
-
-//Use the XML request function thing to get your stuff
-let myRequest = new XMLHttpRequest();
-//Specify what you waaaant
-myRequest.open("GET","../content.json", true);
-//
-myRequest.onload = function() {
-	//var myContent = JSON.parse(myRequest.responseText);
-	//console.log(myRequest.responseText);
-	let myContent = JSON.parse(myRequest.responseText);
-	
-	console.log(myContent[0]);
-};
-//Send the request
-myRequest.send();
 
