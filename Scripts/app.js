@@ -1,6 +1,6 @@
 // File: app.js 
 // Author: Tamara Howell
-// Site: http://comp1073-a3.azurewebsites.net/
+// Site: http://thcomp1073-a3.azurewebsites.net/
 // Description: Contains JavaScript for Project 3
 
 /* javascript lives here */
