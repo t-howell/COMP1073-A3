@@ -1,0 +1,26 @@
+{ 
+	"myContent" : [
+    {
+      "page": "home",
+      "heading": "About Me",
+      "paragraph": "Hello! My name is Tamara. I'm a second semester web design student at Georgian College. I enjoy long walks, gardening and knitting. I'm like your Nana, but decent with computers. My interest in design stems from my enjoyment of helping others. I actively imagine the kinds of applications and well-built websites that could be useful to people."
+    },
+    {
+      "page": "projects",
+	  "heading": "My Projects",
+	  "heading2": "HomeoHealth Center",
+	  "heading3": "The Iris Group",
+	  "heading4": "Unicorn",
+	  "paragraph": "As the Homeohealth Center brand was emerging, I was able to create a logo and original content for the owner.",
+	  "paragraph2": "After the Iris Group lost contact with their designer, they requested my help in creating new content. This involved designing brochures, mail labels and newsletters.",
+	  "paragraph3": "My freehand illustrations may not require any technical skill, but they are useful in creating more casual content."
+    },
+    {
+      "page": "contact",
+	  "heading": "Let's Connect!",
+	  "heading2": "Name",
+	  "heading3": "Email",
+	  "paragraph": "Please leave a short message."
+    }
+  ]
+}
